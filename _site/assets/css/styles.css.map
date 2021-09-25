@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_src/css/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";",
+		"/* Layout */\n/* @import \"variables\"; */\n\n\n/* ----------------- Home page ----------------- */\n\na.navbar-brand {\n    h5 {\n        margin-bottom: 0;\n    }\n}"
+	],
+	"names": [],
+	"mappings": "ACAA,YAAY;AACZ,0BAA0B;AAG1B,mDAAmD;AAEnD,AACI,CADH,AAAA,aAAa,CACV,EAAE,CAAC,EACC,aAAa,EAAE,CAAC,GACnB"
+}
