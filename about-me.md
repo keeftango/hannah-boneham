@@ -1,7 +1,6 @@
 ---
 layout: about
 title: About me
-# permalink: /about/
 ---
 
 ## Inspirational statement about me and what I do

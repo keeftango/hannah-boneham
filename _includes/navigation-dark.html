@@ -21,7 +21,7 @@
     </div>
     <div class="navbar-head">
         <div class="container">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="{{ site.url }}">
                 <!-- <img width="107" src="assets/images/logo-white.svg" alt=""> -->
                 <h5 class="text-white">{{ site.title }}</h5>
             </a>
@@ -39,7 +39,7 @@
                     <ul class="nav navbar-nav navbar-nav-collapse">
                         {% for item in site.data.navigation %}
                         <li>
-                            <a href="{{ item.link }}" class="nav-link collapsed" role="button">
+                            <a href="{{ item.link | relative_url }}" class="nav-link collapsed" role="button">
                                 <span class="nav-link-name">{{ item.name }}</span>
                             </a>
                         </li>
