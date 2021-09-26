@@ -9,3 +9,24 @@ a.navbar-brand {
         margin-bottom: 0;
     }
 }
+
+div.card-wrap {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+
+    .card-header {
+        padding:2.5 rem;
+    }
+
+    .card-footer {
+        padding:2.5 rem;
+
+        h3 { 
+            margin: 0;
+        }
+
+    }
+}

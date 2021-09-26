@@ -3,4 +3,12 @@
 /* ----------------- Home page ----------------- */
 a.navbar-brand h5 { margin-bottom: 0; }
 
+div.card-wrap { height: 100%; display: flex; flex-direction: column; z-index: 4; }
+
+div.card-wrap .card-header { padding: 2.5 rem; }
+
+div.card-wrap .card-footer { padding: 2.5 rem; }
+
+div.card-wrap .card-footer h3 { margin: 0; }
+
 /*# sourceMappingURL=styles.css.map */

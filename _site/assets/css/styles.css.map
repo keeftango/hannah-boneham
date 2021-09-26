@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";",
-		"/* Layout */\n/* @import \"variables\"; */\n\n\n/* ----------------- Home page ----------------- */\n\na.navbar-brand {\n    h5 {\n        margin-bottom: 0;\n    }\n}"
+		"/* Layout */\n/* @import \"variables\"; */\n\n\n/* ----------------- Home page ----------------- */\n\na.navbar-brand {\n    h5 {\n        margin-bottom: 0;\n    }\n}\n\ndiv.card-wrap {\n\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    z-index: 4;\n\n    .card-header {\n        padding:2.5 rem;\n    }\n\n    .card-footer {\n        padding:2.5 rem;\n\n        h3 { \n            margin: 0;\n        }\n\n    }\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,YAAY;AACZ,0BAA0B;AAG1B,mDAAmD;AAEnD,AACI,CADH,AAAA,aAAa,CACV,EAAE,CAAC,EACC,aAAa,EAAE,CAAC,GACnB"
+	"mappings": "ACAA,YAAY;AACZ,0BAA0B;AAG1B,mDAAmD;AAEnD,AACI,CADH,AAAA,aAAa,CACV,EAAE,CAAC,EACC,aAAa,EAAE,CAAC,GACnB;;AAGL,AAAA,GAAG,AAAA,UAAU,CAAC,EAEV,MAAM,EAAE,IAAI,EACZ,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,MAAM,EACtB,OAAO,EAAE,CAAC,GAcb;;AAnBD,AAOI,GAPD,AAAA,UAAU,CAOT,YAAY,CAAC,EACT,OAAO,EAAC,OAAO,GAClB;;AATL,AAWI,GAXD,AAAA,UAAU,CAWT,YAAY,CAAC,EACT,OAAO,EAAC,OAAO,GAMlB;;AAlBL,AAcQ,GAdL,AAAA,UAAU,CAWT,YAAY,CAGR,EAAE,CAAC,EACC,MAAM,EAAE,CAAC,GACZ"
 }

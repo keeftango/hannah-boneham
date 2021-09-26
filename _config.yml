@@ -14,3 +14,5 @@ baseurl: ""
 permalink: pretty
 sass:
   sass_dir: _src/css
+include:
+ - _pages

@@ -1,0 +1,14 @@
+---
+# front matter tells Jekyll to process Liquid
+---
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  {% include head.html %}
+  <body>
+        {% include navigation-dark.html %}
+        {{ content }}
+        {% include footer.html %}
+        {% include scripts.html %}
+  </body>
+</html>

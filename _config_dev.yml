@@ -2,3 +2,5 @@ baseurl: ''
 url: 'http://localhost:4000'
 sass:
   sass_dir: _src/css
+include:
+ - _pages
