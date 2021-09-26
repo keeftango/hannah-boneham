@@ -17,15 +17,18 @@
     <!-- START: Styles -->
 
     <!-- Swiper -->
-    <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css" />
+    <!-- <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css" /> -->
+    <link rel="stylesheet" href="{{ "/assets/vendor/swiper/dist/css/swiper.min.css" | prepend: site.baseurl }}">
 
     <!-- Fancybox -->
-    <link rel="stylesheet" href="assets/vendor/fancybox/dist/jquery.fancybox.min.css" />
+    <!-- <link rel="stylesheet" href="assets/vendor/fancybox/dist/jquery.fancybox.min.css" /> -->
+    <link rel="stylesheet" href="{{ "/assets/vendor/fancybox/dist/jquery.fancybox.min.css" | prepend: site.baseurl }}">
 
     <!-- Themebau -->
-    <link rel="stylesheet" href="assets/css/themebau.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/themebau.min.css"> -->
+    <link rel="stylesheet" href="{{ "/assets/css/themebau.min.css" | prepend: site.baseurl }}">
 
-    <!-- jQuery -->
-    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script type="javascript" href="{{ "/assets/vendor/jquery/dist/jquery.min.js" | prepend: site.baseurl }}"></script> -->
 
 </head>

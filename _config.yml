@@ -1,4 +1,5 @@
 # Site settings ------------------------------------
+
 title: Hannah Boneham
 email: hannah-boneham@domain.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -10,9 +11,10 @@ description: > # this means to ignore newlines until "baseurl:"
 # twitter_username: jekyllrb
 
 # Build settings ------------------------------------
-baseurl: ""
-permalink: pretty
+
+# baseurl: ""
+# permalink: pretty
 sass:
   sass_dir: _src/css
-include:
- - _pages
+#include:
+ #- _pages
