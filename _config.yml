@@ -24,7 +24,7 @@ description: > # this means to ignore newlines until "baseurl:"
 # jekyll serve --config _config.yml,_config_dev.yml 
 # ... in terminal to work on local _config_dev.yml for baseurl + url
 
-baseurl: '/hannah-boneham/'
+baseurl: '/hannah-boneham'
 url: 'https://keeftango.github.io'
 
 # Build settings ------------------------------------
