@@ -8,8 +8,8 @@ layout: default
     <div class="container">
         <div class="row justify-content-center text-center pt-60 pb-130 mt-30">
             <div class="col-12 col-lg-8">
-                <div class="subtitle show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">{{ post.tag }} - {{ post.date | date: "%b %d, %Y" }}</div>
-                <h1 class="h2 mb-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">{{ post.title }}</h1>
+                <div class="subtitle show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">{{ page.tag }} - {{ page.date | date: "%b %d, %Y" }}</div>
+                <h1 class="h2 mb-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">{{ page.title }}</h1>
             </div>
         </div>
         <img class="w-100 mb-100 show-on-scroll" src="http://placekitten.com/1920/1080" alt="" data-show-duration="800">
@@ -69,7 +69,7 @@ layout: default
                 <hr class="mt-n10 mb-30">
                 <div class="row gh-2 gv-1 justify-content-between">
                     <div class="col-auto">
-                        <span class="font-weight-medium mr-8">Tags:</span> {{ post.tag }}
+                        <span class="font-weight-medium mr-8">Tags:</span> {{ page.tag }}
                     </div>
                     <div class="col-auto">
                         <span class="font-weight-medium">Share:</span>
@@ -88,13 +88,13 @@ layout: default
                                     </svg>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.84375 0C2.90469 0 0 1.91862 0 5.02377C0 6.99849 1.13437 8.12049 1.82187 8.12049C2.10547 8.12049 2.26875 7.34631 2.26875 7.12752C2.26875 6.86665 1.58984 6.31126 1.58984 5.22573C1.58984 2.9705 3.34297 1.37165 5.61172 1.37165C7.5625 1.37165 9.00625 2.45718 9.00625 4.45154C9.00625 5.941 8.39609 8.73479 6.41953 8.73479C5.70625 8.73479 5.09609 8.22989 5.09609 7.5062C5.09609 6.4459 5.85234 5.41927 5.85234 4.32532C5.85234 2.46841 3.1625 2.80501 3.1625 5.04901C3.1625 5.52025 3.22266 6.04198 3.4375 6.47115C3.04219 8.13732 2.23438 10.6198 2.23438 12.3364C2.23438 12.8666 2.31172 13.3883 2.36328 13.9184C2.46068 14.025 2.41198 14.0138 2.56094 13.9605C4.00469 12.0251 3.95313 11.6464 4.60625 9.11346C4.95859 9.76983 5.86953 10.1233 6.59141 10.1233C9.63359 10.1233 11 7.22008 11 4.60301C11 1.81764 8.54219 0 5.84375 0Z" fill="currentColor" />
                                     </svg>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -103,41 +103,22 @@ layout: default
         <!-- quote - END -->
 
         <!-- related posts - START -->
+
         <h2 class="text-center mt-130 pb-30 mb-60">Related posts</h2>
         <div class="row gh-1 gv-1 mb-n8">
+            {% for post in site.posts limit:3 %}
             <div class="col-12 col-md-6 col-lg-4 show-on-scroll" data-show-duration="600" data-show-distance="20" data-show-delay="50">
                 <a class="card card-blog card-vertical" href="single-post.html">
                     <span class="card-img">
-                        <img src="assets/images/blog/blog-1.jpg" alt="">
+                        <img src="http://placekitten.com/740/600" alt="">
                     </span>
                     <span class="card-body">
-                        <span class="card-title h5">Office explained in fewer than 100+ Characters</span>
-                        <span class="card-date">12 may, 2020</span>
+                        <span class="card-title h5">{{ post.title }}</span>
+                        <span class="card-date">{{ post.date | date: "%b %d, %Y" }}</span>
                     </span>
                 </a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 show-on-scroll" data-show-duration="600" data-show-distance="20" data-show-delay="100">
-                <a class="card card-blog card-vertical" href="single-post.html">
-                    <span class="card-img">
-                        <img src="assets/images/blog/blog-2.jpg" alt="">
-                    </span>
-                    <span class="card-body">
-                        <span class="card-title h5">This week&#39;s top Stories about Development</span>
-                        <span class="card-date">08 may, 2020</span>
-                    </span>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 show-on-scroll" data-show-duration="600" data-show-distance="20" data-show-delay="150">
-                <a class="card card-blog card-vertical" href="single-post.html">
-                    <span class="card-img">
-                        <img src="assets/images/blog/blog-3.jpg" alt="">
-                    </span>
-                    <span class="card-body">
-                        <span class="card-title h5">Facts about Business that you never knew</span>
-                        <span class="card-date">05 may, 2020</span>
-                    </span>
-                </a>
-            </div>
+            {% endfor %}
         </div>
         <!-- related posts - END -->
 
@@ -146,7 +127,7 @@ layout: default
             <a href="#" class="btn btn-clean"><svg class="icon-arrow icon-arrow-left" width='26' height='11' viewBox='0 0 26 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <path d='M5.5 1L1 5.5L5.5 10' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' />
                     <path d='M19 5.5H1' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' /></svg>prev<span class="d-none d-sm-inline"> post</span></a>
-            <a href="blog-col-1.html" class="btn btn-light btn-circle btn-xs">all</a>
+            <a href="{{ "/post-list/" | prepend: site.baseurl }}" class="btn btn-light btn-circle btn-xs">all</a>
             <a href="#" class="btn btn-clean">next<span class="d-none d-sm-inline"> post</span><svg class="icon-arrow icon-arrow-right" width='26' height='11' viewBox='0 0 26 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <path d='M20.5 1L25 5.5L20.5 10' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' />
                     <path d='M7 5.5H25' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' /></svg></a>
