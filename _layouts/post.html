@@ -2,6 +2,12 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+{% include navigation.html %}
 
-{{ content }}
+<div class="content-wrap">
+
+    <h2>{{ post.title }}</h2>
+    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+    {{ content }}
+
+</div>
