@@ -9,15 +9,8 @@ description: > # this means to ignore newlines until "baseurl:"
 
 # twitter_username: jekyllrb
 
-# Build settings ------------------------------------
-
 # baseurl: '' # the subpath of your site, e.g. /blog/
 # url: 'http://yourdomain.com' # the base hostname & protocol for your site
-
-baseurl: '/hannah-boneham/'
-permalink: pretty
-sass:
-  sass_dir: _src/css
 
 # this base url would be right if just on Github pages, breaks when connected to domain.
 # baseurl: "/apathofbravery"
@@ -26,3 +19,12 @@ sass:
 # baseurl: ""
 # url: "apathofbravery.com"
 # then, jekyll serve in terminal, then copy _site folder
+
+baseurl: '/hannah-boneham'
+url: 'https://keeftango.github.io'
+permalink: pretty
+
+# Build settings ------------------------------------
+
+sass:
+  sass_dir: _src/css
