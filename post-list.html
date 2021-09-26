@@ -7,11 +7,76 @@ layout: default
 
 <div class="content-wrap">
 
-    <div class="container pt-130 pb-130 mt-n10">
-        <div class="row">
+    <div class="container">
 
-            <h1>{{ page.title }}</h1>
+        <!-- Title - START -->
+        <div class="pt-60 pb-60 mt-10 mb-2 text-center">
+            <h1 class="mt-10 show-on-scroll" data-show-duration="600" data-show-distance="10">{{ page.title }}</h1>
+        </div>
+        <!-- Title - END -->
+
+        <!-- START -->
+        <div class="isotope">
+
+            <!-- filter - START -->
+            <ul class="nav justify-content-center isotope-options mb-60 pb-30">
+                <li class="nav-item active">
+                    <a href="#" data-filter="all" class="nav-link">
+                        <div class="nav-link-name">all posts</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-filter="filter1" class="nav-link">
+                        <div class="nav-link-name">Filter 1</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-filter="filter2" class="nav-link">
+                        <div class="nav-link-name">Filter 2</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-filter="filter3" class="nav-link">
+                        <div class="nav-link-name">Filter 3</div>
+                    </a>
+                </li>
+            </ul>
+            <!-- filter - END -->
+
+            <!-- Posts - START -->
+            <div class="row gh-1 gv-4 isotope-grid mb-100">
+
+                {% for post in site.posts %}
+                <!-- post card - START -->
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filters="{{ post.tag }}">
+                    <div class="card card-blog card-vertical">
+                        <a href="{{ post.url | relative_url }}" class="card-img">
+                            <img src="http://placekitten.com/460/386" alt="">
+                        </a>
+                        <div class="card-body">
+                            <a href="{{ post.url | relative_url }}" class="card-title h5">{{ post.title }}</a>
+                            <div class="card-date">{{ post.date | date: "%b %d, %Y" }}</div>
+                            <p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}  </p>
+                            <a href="{{ post.url | relative_url }}" class="btn btn-clean">read more<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' />
+                                    <path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' /></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- post card - END -->
+                {% endfor %}
+
+            </div>
+            <!-- Posts - END-->
+
+
+            <!-- <div class="text-center mt-100">
+                <a href="blog-col-1.html" class="btn btn-light btn-circle btn-lg">more</a>
+            </div> -->
 
         </div>
+        <!-- END  -->
+
     </div>
+
 </div>

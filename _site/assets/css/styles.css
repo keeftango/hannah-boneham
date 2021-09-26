@@ -18,4 +18,7 @@ div.card-wrap .card-footer h3 { margin: 0; }
 
 figure.img-background { z-index: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: 0; background-size: cover; background-position: center; overflow: hidden; opacity: 0.4; background: #000; }
 
+/* ----------------- Post lists ----------------- */
+.isotope-grid .isotope-item .card-blog p { margin-bottom: 0; }
+
 /*# sourceMappingURL=styles.css.map */

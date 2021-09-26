@@ -182,7 +182,7 @@ layout: default
                 </div>
                 <div class="col-lg-6">
 
-                    {% for post in site.posts %}
+                    {% for post in site.posts limit:3 %}
                         <a class="card card-blog card-horizontal card-sm show-on-scroll" data-show-duration=500 data-show-distance=20 data-show-origin=right href="{{ post.url | relative_url }}">
                             <span class="card-img">
                                 <img src="http://placekitten.com/550/550" alt="">
