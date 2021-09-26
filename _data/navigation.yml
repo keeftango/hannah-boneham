@@ -1,6 +1,6 @@
 - name: Home
-  link: /
+  link: 
 - name: Posts
-  link: /post-list.html
+  link: post-list.html
 - name: About me
-  link: /about-me.html
+  link: about-me.html
