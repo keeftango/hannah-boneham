@@ -5,7 +5,16 @@
 Colours
 --------------------------------------------------------------------------------
 */
-/* ----------------- Home page ----------------- */
+/*
+--------------------------------------------------------------------------------
+Typography
+--------------------------------------------------------------------------------
+*/
+/*
+--------------------------------------------------------------------------------
+Home page
+--------------------------------------------------------------------------------
+*/
 a.navbar-brand h5 { margin-bottom: 0; }
 
 div.card-wrap { height: 100%; display: flex; flex-direction: column; z-index: 4; position: relative; }
@@ -18,7 +27,11 @@ div.card-wrap .card-footer h3 { margin: 0; }
 
 figure.img-background { z-index: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: 0; background-size: cover; background-position: center; overflow: hidden; opacity: 0.4; background: #000; }
 
-/* ----------------- Post lists ----------------- */
+/*
+--------------------------------------------------------------------------------
+Post lists
+--------------------------------------------------------------------------------
+*/
 .isotope-grid .isotope-item .card-blog p { margin-bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */
