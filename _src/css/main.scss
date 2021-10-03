@@ -21,7 +21,21 @@ Typography
 */
 
 
+p {
+    margin-bottom: 1em!important;
 
+    a {
+
+        text-decoration: underline wavy #8A7C8E;
+
+        &:hover {
+
+            color: #654F69;
+            text-decoration: underline wavy #8A7C8E;
+
+        }
+    }
+}
 /*
 --------------------------------------------------------------------------------
 Home page

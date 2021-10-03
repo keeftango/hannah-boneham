@@ -10,6 +10,12 @@ Colours
 Typography
 --------------------------------------------------------------------------------
 */
+p { margin-bottom: 1em !important; }
+
+p a { text-decoration: underline wavy #8A7C8E; }
+
+p a:hover { color: #654F69; text-decoration: underline wavy #8A7C8E; }
+
 /*
 --------------------------------------------------------------------------------
 Home page
