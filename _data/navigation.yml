@@ -1,6 +1,6 @@
 - name: Home
   link: 
-- name: Posts
-  link: post-list.html
+# - name: Posts
+#   link: post-list.html
 - name: About me
   link: about-me.html
