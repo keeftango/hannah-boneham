@@ -25,8 +25,9 @@ description: > # this means to ignore newlines until "baseurl:"
 # ... in terminal to work on local _config_dev.yml for baseurl + url
 
 # Setup for Github Pages deployment
-baseurl: '/hannah-boneham'
-url: 'https://keeftango.github.io'
+baseurl: ""
+# baseurl: '/hannah-boneham'
+# url: 'https://keeftango.github.io'
 
 # Setup for Github pages with own domain URL
 # baseurl: ""
