@@ -2,10 +2,10 @@
 
 title: Hannah Boneham
 email: hannah-boneham@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: # this means to ignore newlines until "baseurl:"
+  The average working person in Britain will spend over 90,000 hours of their lives at work.
+  When you reflect back on your career, how many of those hours do you think you will remember fondly?
+  Our leaders have a significant ability to support our wellbeing at work but their success relies on understanding how their efforts are perceived by those who work for them.
 
 # twitter_username: jekyllrb
 
