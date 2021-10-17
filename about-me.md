@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About me
+title: About me - Hannah Boneham
 ---
 
 ## I’d love to hear from you
