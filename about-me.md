@@ -11,4 +11,4 @@ I am fascinated by the relationship between leadership and wellbeing (health and
 
 I really enjoy collaborative work and meeting new people so, please get in touch if you’d like to learn more.
 
-[Follow me on Twitter](https://twitter.com/hannahboneham?lang=en) or [email me](mailto:h.boneham@sheffield.ac.uk?subject=Website%20Enquiry)
+[Follow me on Twitter](https://twitter.com/hannahboneham?lang=en) or [email me](mailto:h.boneham@sheffield.ac.uk?subject=Website%20Enquiry) 
