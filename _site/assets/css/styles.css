@@ -13,7 +13,7 @@ Typography
 /* Link styling */
 p { margin-bottom: 1em !important; }
 
-p a { color: #8751A4; text-decoration: underline solid #8A7C8E; }
+p a { text-decoration: underline solid #8A7C8E; }
 
 p a:hover { color: #654F69; text-decoration: underline solid #8A7C8E; }
 
