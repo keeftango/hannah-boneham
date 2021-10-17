@@ -25,12 +25,12 @@ email: h.boneham@sheffield.ac.uk
 # ... in terminal to work on local _config_dev.yml for baseurl + url
 
 # Setup for Github Pages deployment
-baseurl: "/hannah-boneham"
+# baseurl: "/hannah-boneham"
 # url: 'https://keeftango.github.io'
 
 # Setup for Github pages with own domain URL
-# baseurl: ""
-# url: 'http://website.com'
+baseurl: ""
+url: 'http://lead-well.org'
 
 # Build settings ------------------------------------
 
